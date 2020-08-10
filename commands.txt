@@ -1,0 +1,277 @@
+﻿docker images
+  472  docker ps -a
+  473  docker rm -f dazzling_bohr
+  474  docker images
+  475  docker rmi cb2fabe38fa8
+  476  kubectl show deployments
+  477  kubectl get deployments
+  478  kubectl get deployments
+  479  minikube start
+  480  minikube ip
+  481  kubectl get deployments
+  482  docker ps -a
+  483  docker rm -f funny_wozniak dreamy_greider
+  484  docker images
+  485  docker rmi 4a559587bc30 24c62d093b68
+  486  pwd
+  487  cd C:\\Users\\javacloudmc05\\git\\devopspoc
+  488  dcoker ps -a
+  489  docker ps -a
+  490  docker rm -f romantic_nobel
+  491  docker images
+  492  docker rmi ef6181f1f1a1
+  493  docker images
+  494  kubectl get pods
+  495  kubectl create -f Tomcat-Deployment.yaml
+  496  kubectl get services
+  497  kubectl delete service tomcat-service
+  498  kubectl get services
+  499  kubectl create -f Tomcat-Deployment.yaml
+  500  kubectl get services
+  501  kubectl get pods
+  502  kubectl get pods
+  503  kubectl get services
+  504  kubectl get deployments
+  505  kubectl get deployments
+  506  kubectl logs
+  507  kubectl logs tomcat-deployment
+  508  kubectl logs -h
+  509  docker ps -a
+  510  kubectl get container
+  511  kubectl get services
+  512  kubectl get nodes
+  513  kubectl get deployments
+  514  kubectl delete deployment tomcat-deployment
+  515  kubectl get services
+  516  kubectl delete sercices tomcat-service
+  517  kubectl delete services tomcat-service
+  518  kubectl get services
+  519  kubectl get deployments
+  520  kubeget get pods
+  521  kubectl get pods
+  522  kubectl get pods
+  523  kubectl get services
+  524  pwd
+  525  ls -ltrh
+  526  ls -ltrh
+  527  kubectl create -f tomcat-deployment.yaml
+  528  kubectl get pods
+  529  kubectl get pods
+  530  kubectl get pods
+  531  kubectl get services
+  532  kubectl get services
+  533  kubectl get spods
+  534  kubectl get pods
+  535  kubectl delete pods tomcat-deployment-864878b774-md9nz
+  536  kubectl get pods
+  537  kubectl get pods
+  538  kubectl create -f tomcat-deployment.yaml
+  539  kubectl get pods
+  540  kubectl get deployments
+  541  kubectl delete deployments tomcat-deployment
+  542  kubectl get deployments
+  543  kubectl get pods
+  544  kubectl get services
+  545  kubectl create -f tomcat-deployment.yaml
+  546  kubectl get pods
+  547  kubectl get deployments
+  548  kubectl get deployments
+  549  kubectl get deployments
+  550  kubectl get deployments
+  551  kubectl get deployments
+  552  kubectl get deployments
+  553  kubectl get deployments
+  554  kubectl get deployments
+  555  kubectl delete deployments tomcat-deployment
+  556  clear
+  557  kubectl get pods
+  558  kubectl get services
+  559  kubectl get pods
+  560  kubectl get services
+  561  kubectl create -f tomcat-deployment.yaml
+  562  kubectl get pods
+  563  kubectl get pods
+  564  kubectl get pods
+  565  kubectl get pods
+  566  kubectl get services
+  567  kubectl create -f tomcat-services.yaml
+  568  kubectl get services
+  569  kubectl get deployments
+  570  kubectl get deployments
+  571  kubectl describe tomcat-deployment
+  572  docker images
+  573  docker ps -a
+  574  kubectl config view
+  575  minikube ip
+  576  kubectl get deployments
+  577  minikube service tomcat-deployment --url
+  578  minikube service list
+  579  kubectl get pods
+  580  kubectl describe pods tomcat-deployment-6c6f565957-8wr4q
+  581  kube-apiserver
+  582   curl http://localhost:30010
+  583   curl http://localhost:30010/sparkjava-hello-world-1.0/hello 
+  584  kubectl get pods -o wide
+  585  ssh 172.17.0.4
+  586  ssh docker@192.168.99.101
+  587  kubectl get deployments
+  588  kubectl get services
+  589  kubectl delete deployments tomcat-deployment
+  590  kubectl delete services tomcat-service
+  591  kubectl get pods -o wide
+  592  kubectl get services
+  593  kubectl get deployments
+  594  kubectl create -f tomcat-deployment.yaml 
+  595  kubectl get pods -o wide
+  596  ssh docker@192.168.99.101
+  597  kubectl get pods -o wide
+  598  kubectl get deployments
+  599  kubectl get services
+  600  kubectl create -f tomcat-services.yaml 
+  601  kubectl get services
+  602  minikube service tomcat-service --url
+  603  minikube config view
+  604  kubectl config view
+  605  kubectl get services
+  606  kubectl get pods -o wide
+  607  kubectl get deployments
+  608  kubectl scale deployment tomcat-deployment --replicas=3
+  609  kubectl get deployments
+  610  kubectl get pods -o wide
+  611  cd /home/docker
+  612  pwd
+  613  ssh default@docker
+  614  kubectl get deployments
+  615  kubectl delete deployments tomcat-deployment
+  616  kubectl get services
+  617  kubectl delete services tomcat-service
+  618  kubectl get services
+  619  kubectl get deployments
+  620  kubectl get pods
+  621  clear
+  622  kubectl create -f tomcat-deployment.yaml
+  623  kubectl create -f tomcat-serrvices.yaml
+  624  kubectl create -f tomcat-services.yaml
+  625  kubectl get deployments
+  626  kubectl scale deployments tomcat-deployment --replicas=4
+  627  kubectl get deployments
+  628  kubectl get services
+  629  kubectl get pods
+  630  kubectl get pods -o wide
+  631  kubectl delete deployments tomcat-deployment
+  632  kubectl get pods -o wide
+  633  kubectl get pods
+  634  kubectl get pods -o wide
+  635  kubectl get services
+  636  kubectl delete services tomcat-service
+  637  kubectl get services
+  638  kubectl get pods
+  639  kubectl get deployments
+  640  kubectl get services
+  641  kubectl config view
+  642  minikube services list
+  643  minikube service list
+  644  kubectl create namespace jenkins && kubectl create serviceaccount jenkins --namespace=jenkins && kubectl describe secret $(kubectl describe serviceaccount jenkins --namespace=jenkins | grep Token | awk '{print $2}') --namespace=jenkins && kubectl create rolebinding jenkins-admin-binding --clusterrole=admin --serviceaccount=jenkins:jenkins --namespace=jenkins
+  645  minikube service list
+  646  kubectl get serviceaccounts
+  647  kubectl get serviceaccounts default
+  648  kubectl get serviceaccounts djenkins
+  649  kubectl get serviceaccounts jenkins
+  650  kubectl version
+  651  kubectl get secrets
+  652  kubectl describe serctes default-token-fb7vd
+  653  kubectl describe secretes default-token-fb7vd
+  654  kubectl describe secrets default-token-fb7vd
+  655  kubectl get sa
+  656  kubectl describe sa default
+  657  minikube ip
+  658  kubectl create namespace jenkins && kubectl create serviceaccount jenkins --namespace=jenkins && kubectl describe secret $(kubectl describe serviceaccount jenkins --namespace=jenkins | grep Token | awk '{print $2}') --namespace=jenkins && kubectl create rolebinding jenkins-admin-binding --clusterrole=admin --serviceaccount=jenkins:jenkins --namespace=jenkins
+  659  jenkins describe namespace
+  660  jenkins describe namespaces
+  661  jenkins get namespaces
+  662  jenkins get namespace
+  663  kubectl get namespace
+  664  kubectl describe namespace jenkins
+  665  ipconfig
+  666  kubectl get sa
+  667  describe role
+  668  describe role test
+  669  describe role default
+  670  kubectl get pods --all-namespaces
+  671  kubectl get sa
+  672  kubectl exec default -- sh -c 'kubectl get pods --all-namespaces'
+  673  kubectl get pods --all-namespaces
+  674  kubectl get pods --o wide
+  675  kubectl get pods --o -wide
+  676  kubectl get pods -o -wide
+  677  kubectl get pods -o wide
+  678  kubectl get namesapce
+  679  kubectl get namespace
+  680  kubectl get pods
+  681  kubectl create -f tomcat-deployment.yaml
+  682  kubectl get pods
+  683  kubectl get pods -o wide
+  684  kubectl get namespace
+  685  kubectl config view --minify
+  686  kubectl config view --minify | grep namespace
+  687  kubectl api-resources --namedspace=true
+  688  kubectl api-resources --namespaced=true
+  689  kubectl api-resources --namespaced=false
+  690  kubectl get sa
+  691  kubectl proxy
+  692  kubectl get sa jenkins
+  693  kubectl get sa
+  694  kubectl get namespace
+  695  kubectl get sa
+  696  kubectl create -f service-account.yaml
+  697  kubectl get sa
+  698  kubectl get sa jenkins
+  699  kubectl describe sa jenkins
+  700  kubectl describe sa default
+  701  kubectl describe sa default
+  702  kubectl describe sa jenkins
+  703  kubectl get sa
+  704  kubectl delete sa jenkins
+  705  kubectl get sa
+  706  kubectl create -f service-account.yaml
+  707  kubectl get sa
+  708  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep jenkins | awk '{print $1}')
+  709  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep default | awk '{print $1}')
+  710  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep jenkins | awk '{print $1}')
+  711  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep default | awk '{print $1}')
+  712  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep jenkins | awk '{print $1}')
+  713  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep default | awk '{print $1}')
+  714  kubectl get secrets
+  715  kubectl get sa
+  716  hostname
+  717  kubectl get sa
+  718  kubectl get serviceaccount --all-namespaces | grep dashboard
+  719  kubectl get serviceaccount --all-namespaces
+  720  kubectl delete serviceaccount -n kube-system jenkins
+  721  kubectl delete serviceaccount -n kube-system default
+  722  kubectl get serviceaccount --all-namespaces
+  723  kubectl get serviceaccount
+  724  kubectl get serviceaccount
+  725  kubectl get serviceaccount
+  726* 
+  727  kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep default | awk '{print $1}')
+  728  kubectl get serviceaccount
+  729  kubectl config view
+  730  ssh docker@default
+  731  ssh docker@d192
+  732  sh docker@d192.168.99.101
+  733  sh docker@192.168.99.101
+  734  ssh docker@192.168.99.101
+  735  ssh docker@192.168.99.101
+  736  kubectl config
+  737  kubectl config view
+  738  less .kube/config
+  739  kubectl get pods
+  740  kubectl get sa
+  741  kubectl delete sa jeknins
+  742  kubectl get serviceaccounts
+  743  kubectl delete sa jeknins
+  744  kubectl get namespace
+  745  history
+  746  pwd
+  747  history > commands.txt

@@ -1,0 +1,102 @@
+pipeline {
+
+    agent any
+    
+       stages 
+       {
+           stage("Workspace Cleanup")
+           {
+            steps {
+                 dir("${WORKSPACE}")
+                {
+                    deleteDir()
+                }
+                dir("${WORKSPACE}@tmp")
+                {
+                    deleteDir()
+                }
+              echo "clean up completed"
+              //This will print the env varialbe. Just to print here
+              echo "PATH =${PATH}"
+            }
+        }
+
+          stage("Code Checkout") 
+          {
+            steps {
+                echo "checking out the code"
+                git GIT_URL
+               	// This is hardcoding 
+               //git url: "http://172.18.2.18/Vairam/devopspoc.git"
+            }
+        }
+        
+        stage("Code Build")
+        {
+            steps {
+                echo "Building out the code"
+                bat "mvn package"
+                  }
+        }
+        
+         stage("Docker Image build")
+        {
+            steps {
+                echo "Building docker image"
+                echo "$PATH"
+                 bat "docker build -t vairam86/demodocker:v7 ."
+                  }
+        }
+        
+           stage("Docker Image push")
+        {
+            steps {
+                echo "pushing  the docker image"
+                echo "$PATH"
+                
+                withCredentials([string(credentialsId: 'Dockerpwd', variable: 'dockerhubPwd')]) {
+                    bat "docker login -u vairam86 -p ${dockerhubPwd}"
+}
+                 bat "docker push vairam86/demodocker:v7"
+                  }
+        }
+        
+        //  stage("Run Docker images")
+        // {
+        //     steps {
+        //         echo "Running docker image"
+        //          bat "docker run -d -p 8083:8080 vairam86/demodocker:v7"
+        //           }
+        // }
+        
+          stage("Kubernetes deployment")
+        {
+            steps {
+                withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'kubefile', namespace: 'default', serverUrl: 'https://192.168.99.101:8443') {
+                 
+                 script{
+                     try{
+                         //bat "kubectl version"
+                       // bat "kubectl get pods"
+                         bat "kubectl create -f tomcat-deployment.yaml"
+                         bat "kubectl create -f tomcat-services.yaml"
+                         // bat "kubectl create -f tomcat-services2.yaml"
+                     }
+                     catch(error){
+                        // bat "kubectl version"
+                      //  bat "kubectl get pods"
+                      bat "kubectl apply -f tomcat-deployment.yaml"
+                      bat "kubectl apply -f tomcat-services.yaml"  
+                     }
+                 }
+                     
+                 }
+                
+            }
+        }
+        
+    }
+        
+}
+
+
