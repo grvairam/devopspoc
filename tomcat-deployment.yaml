@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: vairam86/demodocker:v7
+        image: vairam86/demodocker:imagetagversion
         ports:
          - containerPort: 8080
